@@ -20,7 +20,7 @@ const HotCollection = () => {
         </div>
         <div className="flex flex-col gap-5 justify-center items-center mt-[60px]">
           <div className="flex flex-wrap justify-center   gap-[30px]">
-            {/* Box 1 */}
+            
             <div className="box zoomin ">
               <img className="p-5" src={Alien1} alt="Alien 1" />
               <p className="text-xl text-[#ffffff] pt-[14px] pb-[20px] pl-[20px]">
@@ -28,7 +28,7 @@ const HotCollection = () => {
               </p>
             </div>
 
-            {/* Box 2 */}
+       
             <div className="box zoomin">
               <img className="p-5" src={Alien2} alt="Alien 2" />
               <p className="text-xl text-[#ffffff] pt-[14px] pb-[20px] pl-[20px]">
@@ -36,7 +36,7 @@ const HotCollection = () => {
               </p>
             </div>
 
-            {/* Box 3 */}
+          
             <div className="box zoomin">
               <img className="p-5" src={Alien3} alt="Alien 3" />
               <p className="text-xl text-[#ffffff] pt-[14px] pb-[20px] pl-[20px]">
@@ -44,7 +44,7 @@ const HotCollection = () => {
               </p>
             </div>
 
-            {/* Box 4 */}
+           
             <div className="box zoomin">
               <img className="p-5" src={Alien4} alt="Alien 4" />
               <p className="text-xl text-[#ffffff] pt-[14px] pb-[20px] pl-[20px]">
@@ -52,7 +52,7 @@ const HotCollection = () => {
               </p>
             </div>
 
-            {/* Box 5 */}
+        
           </div>
           <div className="flex flex-wrap justify-center gap-[30px]">
             <div className="box zoomin">
@@ -62,7 +62,7 @@ const HotCollection = () => {
               </p>
             </div>
 
-            {/* Box 6 */}
+           
             <div className="box zoomin">
               <img className="p-5" src={Alien6} alt="Alien 6" />
               <p className="text-xl text-[#ffffff] pt-[14px] pb-[20px] pl-[20px]">
@@ -70,7 +70,7 @@ const HotCollection = () => {
               </p>
             </div>
 
-            {/* Box 7 */}
+            
             <div className="box zoomin">
               <img className="p-5" src={Alien7} alt="Alien 7" />
               <p className="text-xl text-[#ffffff] pt-[14px] pb-[20px] pl-[20px]">
@@ -78,7 +78,7 @@ const HotCollection = () => {
               </p>
             </div>
 
-            {/* Box 8 */}
+         
             <div className="box zoomin">
               <img className="p-5" src={Alien8} alt="Alien 8" />
               <p className="text-xl text-[#ffffff] pt-[14px] pb-[20px] pl-[20px]">
