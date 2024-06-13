@@ -9,14 +9,14 @@ const About = () => {
       id={LINKS.ABOUT}>
       <div className="max-w-[1420px]">
         <div className="flex justify-center items-center flex-col lg:flex-row text-[#ffffff] m-auto gap-[64px] flex-col:md">
-          <div className="zoomin max-w-[50%] lg:max-w-[50% ml-8 justify-center items-center">
-            <h3 className="text-[44px] leading-[56px]">THE STORY</h3>
-            <p className="text-[18px] font-normal poppins mt-4">
+          <div className="zoomin max-w-[50%] lg:max-w-[50% ml-8 justify-center items-center ">
+            <h3 className="text-[44px] leading-[56px] m-auto">THE STORY</h3>
+            <p className="text-[18px] font-normal poppins m-auto mt-4">
               Our collection's priority is to reward NFT holders by developing
               utilities they can use in their current everyday life. Not in a
               hypothetical future.
             </p>
-            <div className="flex gap-5 mt-10">
+            <div className="flex flex-wrap  gap-5 mt-10">
               <div>
                 <h6 className="text-xl leading-5">Total Items</h6>
                 <p className="text-[56px] shadow-sm leading-[68px]">2240+</p>
