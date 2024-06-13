@@ -56,9 +56,7 @@ const Header = () => {
                 className="cursor-pointer text-base flex"
                 onClick={scrollTo("#")}>
                 Home
-                <span className=" hidden sm: md: mt-1 ml-2">
-                  <FaChevronDown />
-                </span>
+               
               </div>
             </li>
             <li className="zoomin hover:opacity-80 p-2 lg:border-b border-b-gray-900">
@@ -66,9 +64,7 @@ const Header = () => {
                 className="cursor-pointer text-base flex"
                 onClick={scrollTo(LINKS.ABOUT)}>
                 About
-                <span className="hidden sm: md: mt-1 ml-2">
-                  <FaChevronDown />
-                </span>
+                
               </div>
             </li>
             <li className="zoomin hover:opacity-80 p-2  lg:border-b border-b-gray-900">
@@ -76,9 +72,7 @@ const Header = () => {
                 className="cursor-pointer text-base flex"
                 onClick={scrollTo("#")}>
                 Roadmap
-                <span className="hidden sm: md: mt-1 ml-2">
-                  <FaChevronDown />
-                </span>
+               
               </div>
             </li>
             <li className="zoomin hover:opacity-80 p-2 lg:border-b border-b-gray-900">
@@ -93,9 +87,7 @@ const Header = () => {
                 className="cursor-pointer text-base flex"
                 onClick={scrollTo("#")}>
                 Faqs
-                <span className="hidden sm: md: mt-1 ml-2">
-                  <FaChevronDown />
-                </span>
+                
               </div>
             </li>
           </ul>
