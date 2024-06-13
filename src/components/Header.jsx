@@ -22,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <div className=" container w-[100vw] m-auto bg-[#040B11] text-[#ffffff]">
+    <div className=" header w-full fixed top-0  z-[99] backdrop-blur-smm-auto bg-[#040B11]/90 text-[#ffffff]">
       <div className="flex items-center justify-between px-4 py-3 lg:justify-center lg:py-0">
         {/* Logo */}
         <div className="flex mt-3 mb-3 lg:mt-[33px] lg:mb-[33px]">
@@ -41,7 +41,7 @@ const Header = () => {
         {/* Hamburger Icon */}
         <div className="lg:hidden mr-5">
           <button onClick={toggleMobileMenu} className="text-3xl">
-            {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+            {isMobileMenuOpen ? <FaTimes className="mt-40" /> : <FaBars />}
           </button>
         </div>
 
@@ -54,7 +54,7 @@ const Header = () => {
             <li className="zoomin hover:opacity-80 p-2 border-b border-b-gray-900">
               <div
                 className="cursor-pointer text-base flex"
-                onClick={scrollTo("#")}>
+                onClick={scrollTo(LINKS.SLIDER)}>
                 Home
                 <span className=" hidden sm: md: mt-1 ml-2">
                   <FaChevronDown />
