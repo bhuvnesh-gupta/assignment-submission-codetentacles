@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <div className=" header w-full fixed top-0  z-[99] backdrop-blur-smm-auto bg-[#040B11]/90 text-[#ffffff]">
       <div className="flex items-center justify-between px-4 py-3 lg:justify-center lg:py-0">
-        {/* Logo */}
+
         <div className="flex mt-3 mb-3 lg:mt-[33px] lg:mb-[33px]">
           <div className="flex hover:opacity-80" to="/">
             <img
@@ -38,14 +38,13 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Hamburger Icon */}
+   
         <div className="lg:hidden mr-5">
           <button onClick={toggleMobileMenu} className="text-3xl">
             {isMobileMenuOpen ? <FaTimes className="mt-40" /> : <FaBars />}
           </button>
         </div>
 
-        {/* Links and dropdowns */}
         <div
           className={`lg:flex lg:items-center lg:gap-8 ml-[118px] ${
             isMobileMenuOpen ? "block" : "hidden"
@@ -101,7 +100,7 @@ const Header = () => {
           </ul>
         </div>
 
-        {/* Buttons */}
+
         <div className="hidden lg:flex gap-[20px] ml-[120px]">
           <button className="zoomin bg-[#141B22] w-12 h-12 p-3 rounded-[40px]  hover:opacity-80">
             <img src={DarkLighticon} alt="toggle" />
