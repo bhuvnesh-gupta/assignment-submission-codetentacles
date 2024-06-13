@@ -88,7 +88,7 @@ const Header = () => {
                 Collection
               </div>
             </li>
-            <li className="zoomin hover:opacity-80 p-2 ">
+            <li className="zoomin hover:opacity-80 p-2 lg:border-b border-b-gray-900">
               <div
                 className="cursor-pointer text-base flex"
                 onClick={scrollTo("#")}>
