@@ -1,4 +1,3 @@
-// src/components/PartnerItem.jsx
 import React from "react";
 
 const PartnerItem = ({ logo, name }) => {
