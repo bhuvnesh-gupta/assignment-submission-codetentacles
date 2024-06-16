@@ -1,4 +1,8 @@
-import React from "react";
+// src/components/Partners.jsx
+import React, { useState, useEffect } from "react";
+import PartnerSlider from "./sections/PartnerSlider";
+import PartnerItem from "./sections/PartnerItem";
+import { LINKS } from "../constants/links";
 
 import TrustWallet from "../assets/svg/partner/TrustWallet.svg";
 import Binance from "../assets/svg/partner/Binance.svg";
@@ -18,7 +22,6 @@ import Zapper from "../assets/svg/partner/Zapper.svg";
 import Zerion from "../assets/svg/partner/Zerion.svg";
 import ATOken from "../assets/svg/partner/ATOken.svg";
 import BitPay from "../assets/svg/partner/BitPay.svg";
-import { LINKS } from "../constants/links";
 
 const PARTNERS = [
   { name: "Near", logo: Near },
@@ -42,29 +45,40 @@ const PARTNERS = [
 ];
 
 const Partners = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 1024);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div
-      className=" flex flex-col justify-center items-center pl-[60px] pr-[60px] mt-[130px]   text-[#ffffff] "
+      className="flex flex-col justify-center items-center pl-[60px] pr-[60px] mt-[130px] text-[#ffffff]"
       id={LINKS.PARTNERS}>
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl pb-[58px] font-bold mb-8 ">
+        <h2 className="text-4xl pb-[58px] font-bold mb-8">
           <span className="text-green-500"> BINABOX </span>PARTNER
         </h2>
-
-        <div className="grid grid-cols-1  gap-[30px] sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-          {PARTNERS.map((partner, index) => (
-            <div
-              key={index}
-              className={`flex   zoomin items-center m-auto justify-center pt-[20px] pb-[20px] pr-[24px] pl-[24px] rounded hover:opacity-50 ${
-                ((index % 6) % 2 === 0 && Math.floor(index / 6) % 2 === 0) ||
-                ((index % 6) % 2 === 1 && Math.floor(index / 6) % 2 === 1)
-                  ? "bg-[#040b11]"
-                  : "bg-[#141B22]"
-              }`}>
-              <img src={partner.logo} alt={partner.name} className="max-h-12" />
-            </div>
-          ))}
-        </div>
+        {isMobile ? (
+          <PartnerSlider partners={PARTNERS} />
+        ) : (
+          <div className="grid grid-cols-1 gap-[30px] sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+            {PARTNERS.map((partner, index) => (
+              <PartnerItem
+                key={index}
+                logo={partner.logo}
+                name={partner.name}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
