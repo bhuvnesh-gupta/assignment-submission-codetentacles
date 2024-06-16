@@ -13,24 +13,14 @@ const PartnerSlider = ({ partners }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Show 3 partners per slide
-    slidesToScroll: 3, // Scroll 3 partners per click
+    slidesToShow: 3, 
+    slidesToScroll: 3, 
     nextArrow: <SliderArrow direction="right" />,
     prevArrow: <SliderArrow direction="left" />,
     afterChange: (index) => setCurrentSlide(index),
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      // Optional: Handle responsive changes if needed
-      // For fixed number of slides, this may not be necessary
-    };
 
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const totalPages = Math.ceil(partners.length / settings.slidesToShow);
 
