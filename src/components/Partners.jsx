@@ -1,4 +1,4 @@
-// src/components/Partners.jsx
+
 import React, { useState, useEffect } from "react";
 import PartnerSlider from "./sections/PartnerSlider";
 import PartnerItem from "./sections/PartnerItem";
