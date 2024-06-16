@@ -22,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <div className=" header w-full sticky top-0  z-[99] backdrop-blur-smm-auto bg-[#040B11]/90 text-[#ffffff]">
+    <div className=" header w-full sticky top-0  z-[99] backdrop-blur-sm-auto bg-[#040B11]/90 text-[#ffffff]">
       <div className="flex items-center justify-between px-4 py-3 lg:justify-center lg:py-0">
         {/* Logo */}
         <div className="flex mt-3 mb-3 lg:mt-[33px] lg:mb-[33px]">

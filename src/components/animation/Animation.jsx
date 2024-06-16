@@ -4,8 +4,7 @@ import { useInView } from "react-intersection-observer";
 const Animation = ({ children, animationType }) => {
   const { ref, inView } = useInView({
     triggerOnce: false,
-    threshold: 0.1, // Adjust this value as needed
-  });
+    threshold: 0.1,
 
   const animationClasses = {
     fadeInUp: "transition-all duration-1000 opacity-0 transform translate-y-20",
@@ -24,7 +23,6 @@ const Animation = ({ children, animationType }) => {
     fadeInRight: "opacity-100 transform -translate-x-0",
     fadeInDown: "opacity-100 transform -translate-y-0",
     zoomIn: "opacity-100 transform scale-100",
-    // Add more in-view states as needed
   };
 
   const baseClasses = animationClasses[animationType] || "";
